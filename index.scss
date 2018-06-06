@@ -47,10 +47,10 @@
     flex-grow: 0;
     flex-shrink: 1;
   }
-
+ 
   &-fluid{
-    @for $i from 1 through 9 {
-      @for $j from 1 through 9 {
+    @for $i from 1 through 12 {
+      @for $j from 1 through 12 {
         @if($j>=$i){
           &-#{$i}\/#{$j}{
             flex-wrap: wrap;
@@ -63,8 +63,8 @@
     }
   }
 
-  @for $i from 1 through 9 {
-    @for $j from 2 through 9 {
+  @for $i from 1 through 12 {
+    @for $j from 2 through 12 {
       @if($j>=$i){
         .col-#{$i}\/#{$j} {
           flex-basis: (100% / $j) *$i;
